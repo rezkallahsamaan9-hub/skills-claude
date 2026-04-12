@@ -1,0 +1,41 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(claude --version)",
+      "Bash(npm list:*)",
+      "Bash(pip3 list:*)",
+      "Bash(for p:*)",
+      "Bash(do echo:*)",
+      "Read(//Users/rezkallahsamaan/.claude/plugins/marketplaces/claude-plugins-official/external_plugins/$p/.claude-plugin/**)",
+      "Bash(done)",
+      "Bash(brew list:*)",
+      "Read(//usr/local/bin/**)",
+      "Read(//opt/homebrew/bin/**)",
+      "Bash(brew --version)",
+      "Bash(brew install:*)",
+      "Bash(python3.12 --version)",
+      "Bash(python3.12 -m pip install claude-agent-sdk anthropic anyio python-dotenv)",
+      "Bash(python3.12 -m pip install --user claude-agent-sdk anthropic anyio python-dotenv)",
+      "Bash(python3.12 -m venv .venv)",
+      "Bash(.venv/bin/pip install:*)",
+      "Bash(.venv/bin/python3.12 -c \"\nimport claude_agent_sdk\nimport anthropic\nimport anyio\nprint\\(f'claude-agent-sdk: {claude_agent_sdk.__version__}'\\)\nprint\\(f'anthropic: {anthropic.__version__}'\\)\nprint\\('Alle Imports OK ✅'\\)\n\")",
+      "Bash(.venv/bin/python3.12 src/orchestrator.py \"Beschreibe in 2 Sätzen was im Verzeichnis /Users/rezkallahsamaan/Desktop/skills-claude liegt\" 2>&1)",
+      "Bash(.venv/bin/python3.12 -c \"\nfrom claude_agent_sdk import SystemMessage\nimport inspect\nprint\\(inspect.getsource\\(SystemMessage\\)\\)\n\")",
+      "Bash(.venv/bin/python3.12 src/orchestrator.py \"Beschreibe in 2 Sätzen was im Verzeichnis skills-claude liegt\" 2>&1)",
+      "Bash(.venv/bin/python3.12 src/orchestrator.py \"Lies CLAUDE.md und fasse in einem Satz zusammen worum es hier geht\" 2>&1)",
+      "Bash(PLUGIN_ROOT=\"$HOME/.claude/plugins/marketplaces/claude-plugins-official/plugins/hookify\")",
+      "Bash(CLAUDE_PLUGIN_ROOT=\"$PLUGIN_ROOT\" python3 -c \"import sys; sys.path.insert\\(0, ''$PLUGIN_ROOT''\\); from core.config_loader import load_rules; print\\(''core imports OK''\\)\")",
+      "Bash(.venv/bin/python -c \"import sys; print\\(sys.version\\)\" 2>&1)",
+      "Bash(security delete-generic-password:*)",
+      "Bash(./scripts/deploy-workflows.sh)",
+      "WebFetch(domain:restaurants.klick-wert.com)",
+      "mcp__claude_ai_n8n__search_workflows",
+      "mcp__claude_ai_n8n__get_workflow_details",
+      "Bash(curl -v -X POST https://REMOVED_OLD_N8N_INSTANCE/webhook/klickwert-restaurants -H \"Content-Type: application/json\" -d '{\"\"\"\"Name\"\"\"\":\"\"\"\"Debug Test\"\"\"\",\"\"\"\"E-Mail\"\"\"\":\"\"\"\"debug@test.de\"\"\"\",\"\"\"\"Telefon\"\"\"\":\"\"\"\"040-111\"\"\"\",\"\"\"\"Unternehmen\"\"\"\":\"\"\"\"Debug GmbH\"\"\"\",\"\"\"\"Nachricht\"\"\"\":\"\"\"\"Test\"\"\"\"}')",
+      "Bash(N8N_API_KEY=\"REDACTED_N8N_API_KEY\" __NEW_LINE_29b19a6ae36c7827__ curl -s -H \"X-N8N-API-KEY: $N8N_API_KEY\" \"https://REMOVED_OLD_N8N_INSTANCE/api/v1/executions/1716?includeData=true\")",
+      "mcp__claude_ai_n8n__execute_workflow",
+      "Bash(wc -l /Users/rezkallahsamaan/Desktop/klickwert-restaurants/*.html /Users/rezkallahsamaan/Desktop/klickwert-restaurants/*.js /Users/rezkallahsamaan/Desktop/klickwert-restaurants/*.css)",
+      "WebFetch(domain:github.com)"
+    ]
+  }
+}
