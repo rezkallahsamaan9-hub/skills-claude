@@ -32,7 +32,7 @@
       "mcp__claude_ai_n8n__search_workflows",
       "mcp__claude_ai_n8n__get_workflow_details",
       "Bash(curl -v -X POST https://REMOVED_OLD_N8N_INSTANCE/webhook/klickwert-restaurants -H \"Content-Type: application/json\" -d '{\"\"\"\"Name\"\"\"\":\"\"\"\"Debug Test\"\"\"\",\"\"\"\"E-Mail\"\"\"\":\"\"\"\"debug@test.de\"\"\"\",\"\"\"\"Telefon\"\"\"\":\"\"\"\"040-111\"\"\"\",\"\"\"\"Unternehmen\"\"\"\":\"\"\"\"Debug GmbH\"\"\"\",\"\"\"\"Nachricht\"\"\"\":\"\"\"\"Test\"\"\"\"}')",
-      "Bash(N8N_API_KEY=\"REDACTED_N8N_API_KEY\" __NEW_LINE_29b19a6ae36c7827__ curl -s -H \"X-N8N-API-KEY: $N8N_API_KEY\" \"https://REMOVED_OLD_N8N_INSTANCE/api/v1/executions/1716?includeData=true\")",
+      "Bash(N8N_API_KEY=\"$(security find-generic-password -s n8n-api-key -w)\" __NEW_LINE_29b19a6ae36c7827__ curl -s -H \"X-N8N-API-KEY: $N8N_API_KEY\" \"https://REMOVED_OLD_N8N_INSTANCE/api/v1/executions/1716?includeData=true\")",
       "mcp__claude_ai_n8n__execute_workflow",
       "Bash(wc -l /Users/rezkallahsamaan/Desktop/klickwert-restaurants/*.html /Users/rezkallahsamaan/Desktop/klickwert-restaurants/*.js /Users/rezkallahsamaan/Desktop/klickwert-restaurants/*.css)",
       "WebFetch(domain:github.com)"
